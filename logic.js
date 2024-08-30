@@ -1,4 +1,14 @@
-//====================================== Count Occurrences of character ======================================
+//write a function to sort an array of numbers in an ascending order. ==================
+
+const array = [5, 3, 1, 8, 10, 15];
+
+const sortArray = (numArr)=>{
+    return numArr.sort((a,b)=> a -b)
+} 
+
+console.log(sortArray(array))
+
+//======================= Count Occurrences of character ================================
 
 const countCharacter = (string, char)=>{
     string = string.toUpperCase();
@@ -13,9 +23,9 @@ const countCharacter = (string, char)=>{
     return totalChar
 }
 
-console.log(countCharacter("MissIssippiiiII", "i"))
+// console.log(countCharacter("MissIssippiiiII", "i"))
 
-//====================================== create a hash tag generator function==================================
+//===================== create a hash tag generator function============================
 
 const string = "my name is naveen sharma"
 
@@ -34,7 +44,7 @@ const hashTagGenerator = (string)=>{
 // console.log(hashTagGenerator(string))
 
 
-// =======================================find the longest word in string======================================
+// ======================find the longest word in string=================================
 
 const sentence = "I my name is naveen and what's your name";
 

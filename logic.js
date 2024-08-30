@@ -1,3 +1,16 @@
+//write a function to check a string is palindrome or not. ==================
+
+const isPalindrome = (string)=>{
+    const splitedString = string.toLowerCase().replace(/\W/g, '') // capital W mean a-z small or capital or number to chhod ke sab remove krna string se
+    let rev_string = splitedString.split("").reverse().join("")
+    return rev_string === string ? true : false
+}
+
+console.log(isPalindrome("A man, a plan, a canel, Panamea"));
+console.log(isPalindrome("racecar"));
+console.log(isPalindrome("hello"));
+
+
 //write a function to sort an array of numbers in an ascending order. ==================
 
 const array = [5, 3, 1, 8, 10, 15];
@@ -6,7 +19,7 @@ const sortArray = (numArr)=>{
     return numArr.sort((a,b)=> a -b)
 } 
 
-console.log(sortArray(array))
+// console.log(sortArray(array))
 
 //======================= Count Occurrences of character ================================
 
